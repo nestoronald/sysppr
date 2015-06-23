@@ -37,7 +37,7 @@
 		</tr>
 
 	</tbody></table>
-
+<br>
 <h4 class="subtitle-1">Actividades</h4>
 
 

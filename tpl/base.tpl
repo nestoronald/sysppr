@@ -8,35 +8,30 @@
     <!--     Boostrap de twitter -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="bootstrap/css/style.css">
-    <link rel="stylesheet" href="css/colorbox_3.css" />
-    <link type="text/css" href="css/jquery-ui.css" rel="stylesheet">
-    <script src="js/sha512.js" type="text/javascript"></script>
-    <script src="js/hash.js" type="text/javascript"></script>
-    <script src="js/jquery-1.8.3.js" type="text/javascript"></script>
-    <script src="js/jquery-ui-1.10.0.custom.js" type="text/javascript"></script>
-    <script src="js/colorbox/jquery.colorbox-min.js"></script>
-    <script src="js/smoothzoom/jquery.smoothzoom.js"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/global.css">
+    <link rel="stylesheet" href="static/css/colorbox_3.css" />
+    <link type="text/css" href="static/css/jquery-ui.css" rel="stylesheet">
+    <script src="static/js/sha512.js" type="text/javascript"></script>
+    <script src="static/js/hash.js" type="text/javascript"></script>
+    <script src="static/js/jquery-1.8.3.js" type="text/javascript"></script>
+    <script src="static/js/jquery-ui-1.10.0.custom.js" type="text/javascript"></script>
+    <script src="static/js/colorbox/jquery.colorbox-min.js"></script>
+    <script src="static/js/smoothzoom/jquery.smoothzoom.js"></script>
 {$xajax}
 </head>
 <body>
-    <div class = "container main-igp">
+    <div class = "container igp-main">
         <div id="header" class="cabecera">
-            <div class="row-fluid">
-                <div class="span4"><br>
-                    <img src="bootstrap/img/logo-minan-igp_2012.png"/>
-                </div>
-                <div class="span6">
-                        <h1> Módulo de Presupuesto por Resultado </h1>
-                </div>
-                <div class="span2">
-                    <img src="bootstrap/img/igp-trans.png">
-                </div>
+            <div class="container top">
+              <div class="span4"><a href="/"><img alt="logo minam igp" src="static/img/logo-minan-igp-2012.png"></a></div>
+              <div class="span6"> <h1 class="fcenter">Módulo de Presupuesto por Resultado </h1></div>
+              <div class="span2"><a href="http://www.igp.gob.pe" alt="logo igp"><img src="static/img/logo-igp-102-78.png"></a></div>
             </div>
             <div class="container main-menu" id="menuppr">
 
                     <div class="navbar navbar-inverse">
-                        <div class="navbar-inner">
+                        <div class="navbar-inner border-top">
                             <button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
                                 <span class="caret"></span>
                                <span>Menu</span>
@@ -56,43 +51,28 @@
                     </div>
             </div>
         </div>
-        <div class="container div-login-main" id="formLogin">
+        <!--div class="container div-login-main" id="formLogin">
                 <div id="divformlogin" name="formlogin">
                 <form method="post"   class="form-inline" method="post" name="login_form">
                     <div class="input-prepend">
                     <span class="add-on label-id"></span>
-                    <!-- <input type="text" placeholder="Usuario" id="user" name="user" onkeydown="if (event.keyCode == 13) document.getElementById('btnLogin').click()" class="input-small"> -->
+
                     <input class="text ui-widget-content ui-corner-all input-small" id="user" name="user" type="text" onkeydown="if (event.keyCode == 13) document.getElementById('btnLogin').click()" placeholder="Usuario">
                     </div>
                     <div class="input-prepend">
                     <span class="add-on label-pw"></span>
-                    <!-- <input type="password" placeholder="Contraseña" id="password" name="password" onkeydown="if (event.keyCode == 13) document.getElementById('btnLogin').click()" class="input-small"> -->
+
                     <input class="text ui-widget-content ui-corner-all input-small" value="" id="password" name="password" type="password" onkeydown="if (event.keyCode == 13) document.getElementById('btnLogin').click()"  placeholder="Contraseña">
                     </div>
-                    <!-- <input type="submit" value="Ingresar" class="btn" name="Login" onclick="formhash(this.form, this.form.password);"> -->
+
                     <input value="Ingresar" onclick="formhash(this.form, this.form.password);" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn" id="btnLogin" type="button">
                     <div id="error"></div>
                 </form>
                 </div>
-        </div>
-
+        </div-->
+        <div id="navigp"></div>
         <div class="last container-fluid" id="contenido_inv">
             <div class="row-fluid">
-
-
-                    <!-- <form method="post" name="login_form">
-
-                                <span class="add-on label-id"></span>
-                                <input class="text ui-widget-content ui-corner-all span4" id="user" name="user" type="text" onkeydown="if (event.keyCode == 13) document.getElementById('btnLogin').click()" placeholder="Usuario">
-
-                                <span class="add-on label-pw"></span>
-                                <input class="text ui-widget-content ui-corner-all span4" value="" id="password" name="password" type="password" onkeydown="if (event.keyCode == 13) document.getElementById('btnLogin').click()"  placeholder="Contraseña">
-
-                                <input value="Ingresar" onclick="formhash(this.form, this.form.password);" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn" id="btnLogin" type="button">
-                    </form> -->
-                    <!--  -->
-
-
                 <div id="indexContent">
                           <div id="divmain" class=" prepend-1 span6">
                             <span id="firts">E</span><span>l programa Presupuesto por Resultado (PPR) es una estrategia
@@ -105,7 +85,6 @@
                                 </div>
                           </div>
                 </div>
-                <div id="navigp"></div>
                 <div id="divactividadproducto" style="padding-top:10px;"> </div>
                 <div id="result_details"> </div>
                 <div class="span12">

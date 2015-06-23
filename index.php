@@ -7,7 +7,7 @@
 	include("../class/easy_upload/upload_class.php");
 	//require ("phpFileTree.php");
 	$xajax=new xajax();
-	$xajax->configure('javascript URI', 'js/');
+	$xajax->configure('javascript URI', 'static/js/');
 	date_default_timezone_set('America/Lima');
 
 
