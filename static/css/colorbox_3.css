@@ -26,7 +26,7 @@ height: 505px !important;
 overflow: hidden !important;*/}
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
-        #cboxLoadedContent{border:5px solid #BD852D; background:#fff; }
+        #cboxLoadedContent{border:5px solid #40B4E3; background:#fff; }
         #cboxTitle{position: absolute;
                     bottom: 5px;
                     left: 0;
@@ -34,7 +34,7 @@ overflow: hidden !important;*/}
                     width: 100%;
                     color: #fff;
                     z-index: 4;
-                    background: #BD852D;
+                    background: #40B4E3;
                     padding: 4px 0;
                     opacity: 0.9;}
         #cboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}
