@@ -3084,7 +3084,7 @@
 		$(".img-mapas").each(function(index){
 			cont = cont +1;
 		});
-				//var sel = ".map-gallery";
+				var sel = ".map-gallery";
 				$(sel).colorbox({ opacity:0.5, rel:"group0", title:"Galeria de mapass "}, function(){
 					//$(".cboxPhoto").smoothZoom({width: 700,  height: 495});
 					//$(".cboxPhoto").smoothZoom();
@@ -3094,7 +3094,7 @@
 		');
                for($i=0;$i<$result_1["Count"];$i++){
 		$objResponse->script('
-			$(".map-gallery"+'.$i.').colorbox({ opacity:0.5, rel:"group"+'.$i.', title:"Galeria de mapaaas"}, function(){
+			$(".map-gallery"+'.$i.').colorbox({ opacity:0.5, rel:"group"+'.$i.', title:"Galeria de mapas"}, function(){
                              //$(".cboxPhoto").smoothZoom({width: 900,  height: 795});
                              $(".cboxPhoto").smoothZoom();
                         });

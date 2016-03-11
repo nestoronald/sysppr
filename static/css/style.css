@@ -1,4 +1,4 @@
-@charset "utf-8";
+map-gallerymap-gallery@charset "utf-8";
 /*body{text-align:center;}*/
 @font-face {
     font-family: 'Metrophobic';
@@ -1014,3 +1014,4 @@ div.divselect{
 #result_details ul, ol {
     margin: 0 0 10px 25px;
 }
+a.map-gallery img {width:140px;height:140px}
